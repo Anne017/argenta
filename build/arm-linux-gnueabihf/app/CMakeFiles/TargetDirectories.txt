@@ -1,0 +1,15 @@
+/home/rudi/Development/argenta/build/arm-linux-gnueabihf/app/CMakeFiles/install.dir
+/home/rudi/Development/argenta/build/arm-linux-gnueabihf/app/CMakeFiles/list_install_components.dir
+/home/rudi/Development/argenta/build/arm-linux-gnueabihf/app/CMakeFiles/rebuild_cache.dir
+/home/rudi/Development/argenta/build/arm-linux-gnueabihf/app/CMakeFiles/edit_cache.dir
+/home/rudi/Development/argenta/build/arm-linux-gnueabihf/app/CMakeFiles/argenta.desktop.dir
+/home/rudi/Development/argenta/build/arm-linux-gnueabihf/app/CMakeFiles/Argenta_ClickFiles.dir
+/home/rudi/Development/argenta/build/arm-linux-gnueabihf/app/CMakeFiles/install/local.dir
+/home/rudi/Development/argenta/build/arm-linux-gnueabihf/app/CMakeFiles/install/strip.dir
+/home/rudi/Development/argenta/build/arm-linux-gnueabihf/app/po/CMakeFiles/install.dir
+/home/rudi/Development/argenta/build/arm-linux-gnueabihf/app/po/CMakeFiles/list_install_components.dir
+/home/rudi/Development/argenta/build/arm-linux-gnueabihf/app/po/CMakeFiles/rebuild_cache.dir
+/home/rudi/Development/argenta/build/arm-linux-gnueabihf/app/po/CMakeFiles/argenta.bank.pot.dir
+/home/rudi/Development/argenta/build/arm-linux-gnueabihf/app/po/CMakeFiles/install/strip.dir
+/home/rudi/Development/argenta/build/arm-linux-gnueabihf/app/po/CMakeFiles/install/local.dir
+/home/rudi/Development/argenta/build/arm-linux-gnueabihf/app/po/CMakeFiles/edit_cache.dir
