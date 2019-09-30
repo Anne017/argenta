@@ -1,3 +1,0 @@
-# Hashes of file build rules.
-5fd6b84dd72b6208d073331d9f2825ca CMakeFiles/argenta.desktop
-f42cdd790917da761bd308248944b323 po/CMakeFiles/argenta.bank.pot

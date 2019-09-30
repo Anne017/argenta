@@ -8,7 +8,6 @@ import Ubuntu.Content 1.1
 import QtMultimedia 5.8
 import QtSystemInfo 5.0
 import QtQml.Models 2.1
-import "components"
 import "actions" as Actions
 import "."
 
@@ -31,21 +30,22 @@ MainView {
     property bool openExternalUrlInOverlay: true
     property bool popupBlockerEnabled: true
     
-    property string appVersion : "v1.3"
+    property string appVersion : "v1.4"
 
     Page {
-        id: page
-        header: Rectangle {
-            color: "#000000"
-            width: parent.width
-            height: units.dp(.5)
-            z: 1
-        }
+    header: PageHeader {
+        id: header
+        title: i18n.tr("Argenta Mobile")
 
-        anchors {
-            fill: parent
-            bottom: parent.bottom
-        }
+        trailingActionBar.actions: [   
+            Action {
+                iconName: 'info'
+                text: i18n.tr('About')
+                onTriggered: PopupUtils.open(Qt.resolvedUrl('AboutPage.qml'))
+            }
+        ]
+    }
+
 
         WebEngineView {
             id: webview
@@ -64,12 +64,11 @@ MainView {
 
             }
 
-            anchors {
-                fill: parent
-                right: parent.right
-                bottom: parent.bottom
-                margins: units.gu(0)
-                bottomMargin: units.gu(6)
+        anchors {
+            top: header.bottom
+            left: parent.left
+            right: parent.right
+            bottom: parent.bottom
             }
 
                 userScripts: [
@@ -155,10 +154,5 @@ MainView {
                 source: "ContentDownloadDialog.qml"
                 asynchronous: true
             }
-
-     BottomMenu {
-        id: bottomMenu
-        width: parent.width
-     }
-   }
- }       
+         }
+       }       

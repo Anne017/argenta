@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Argenta Mobile\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-09-29 11:49+0000\n"
+"POT-Creation-Date: 2019-09-29 20:25+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -23,6 +23,14 @@ msgstr ""
 
 #: ../qml/SadPage.qml:33
 msgid "Reload"
+msgstr ""
+
+#: ../qml/Main.qml:38
+msgid "Argenta Mobile"
+msgstr ""
+
+#: ../qml/Main.qml:43
+msgid "About"
 msgstr ""
 
 #: ../qml/AboutPage.qml:9
