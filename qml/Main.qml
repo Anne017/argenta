@@ -30,7 +30,7 @@ MainView {
     property bool openExternalUrlInOverlay: true
     property bool popupBlockerEnabled: true
     
-    property string appVersion : "v1.7"
+    property string appVersion : "v1.8"
 
     Page {
     header: PageHeader {
