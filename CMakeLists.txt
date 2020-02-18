@@ -75,3 +75,4 @@ add_subdirectory(po)
 
 # No op custom target for all not compiled files, so they show up in the QtCreator project tree
 add_custom_target("Argenta_ClickFiles" ALL SOURCES "argenta.apparmor" "manifest.json.in")
+
