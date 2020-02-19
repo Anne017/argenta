@@ -5,13 +5,18 @@ function handler(event) {
     style.type = 'text/css';
     style.appendChild(document.createTextNode(
         '.navbar-toggle { display: none; } '+
-        '.col-sm-4 ag-footer-links ng-scope { display: none; } ' +
+        '.col-sm-4 ag-footer-links{ display: none; } ' +
         '.ag-footer-links-title { display: none; } ' +
         '.bp-container bp-ui-dragRoot argenta-footer-container { display: none; } ' +
         '.ag-navbar-links { display: none; } ' +
         '.alert alert-danger { display: none; } ' +
         '.lp-content-text-area { display: none; } ' +
-        '.argenta-notification panel panel-body { display: none; } '
+        '.argenta-notification panel panel-body { display: none; } ' +
+        '.securityTipsHeader { display: none; } ' +
+        '.securityTipsLine { display: none; } ' +
+        '.logingrey { display: none; } ' +
+        '.linksMenuMobile { display: none; } ' +
+        '.social-media { display: none; } ' 
     ));
 
     document.head.appendChild(style);
