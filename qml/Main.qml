@@ -29,7 +29,7 @@ MainView {
     property bool openExternalUrlInOverlay: true
     property bool popupBlockerEnabled: true
     
-    property string appVersion : "v2.1"
+    property string appVersion : "v2.2"
 
     Page {
     header: PageHeader {
@@ -64,8 +64,10 @@ MainView {
             }
 
                 anchors {
-                       fill:parent
-                       centerIn: parent.verticalCenter
+                       top: header.bottom
+                       left: parent.left
+                       right: parent.right
+                       bottom: parent.bottom
             }
 
                 userScripts: [
