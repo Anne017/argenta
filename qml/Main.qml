@@ -23,19 +23,18 @@ MainView {
     }
 
     applicationName: "argenta.bank"
-    anchorToKeyboard: true
     automaticOrientation: true
     property bool blockOpenExternalUrls: false
     property bool runningLocalApplication: false
     property bool openExternalUrlInOverlay: true
     property bool popupBlockerEnabled: true
     
-    property string appVersion : "v2.0"
+    property string appVersion : "v2.1"
 
     Page {
     header: PageHeader {
         id: header
-        title: i18n.tr("Argenta Mobile")
+        title: i18n.tr("Argenta Mobile "+root.appVersion)
 
         trailingActionBar.actions: [   
             Action {
@@ -64,11 +63,9 @@ MainView {
 
             }
 
-        anchors {
-            top: header.bottom
-            left: parent.left
-            right: parent.right
-            bottom: parent.bottom
+                anchors {
+                       fill:parent
+                       centerIn: parent.verticalCenter
             }
 
                 userScripts: [
@@ -76,8 +73,14 @@ MainView {
                        injectionPoint: WebEngineScript.DocumentCreation
                        sourceUrl: Qt.resolvedUrl('js/inject.js')
                        worldId: WebEngineScript.MainWorld
-           }
-        ]
+            },
+                    WebEngineScript {
+                       injectionPoint: WebEngineScript.DocumentCreation
+                       sourceUrl: Qt.resolvedUrl('js/argenta.js')
+                       worldId: WebEngineScript.MainWorld
+            }
+
+         ]
 
                 zoomFactor: 2.5
                 url: "https://homebank.argenta.be"
