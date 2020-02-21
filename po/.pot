@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-02-19 13:44+0000\n"
+"POT-Creation-Date: 2020-02-21 10:20+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -47,7 +47,7 @@ msgid "No"
 msgstr ""
 
 #: ../qml/AboutPage.qml:9
-msgid "About Argenta "
+msgid "About Argenta Mobile "
 msgstr ""
 
 #: ../qml/AboutPage.qml:10
@@ -64,11 +64,16 @@ msgstr ""
 msgid "Special thanks to tester, Tomas Öqvist"
 msgstr ""
 
-#: ../qml/AboutPage.qml:32
+#: ../qml/AboutPage.qml:30
+msgid ""
+"<b>The Argenta Mobile app is not affiliated with Argenta Bank Belgium.</b>"
+msgstr ""
+
+#: ../qml/AboutPage.qml:37
 msgid "Donate"
 msgstr ""
 
-#: ../qml/AboutPage.qml:40
+#: ../qml/AboutPage.qml:45
 msgid "OK"
 msgstr ""
 

@@ -6,7 +6,7 @@ import QtQuick.Layouts 1.1
 Dialog {
             id: aboutDialog
             visible: false
-            title: i18n.tr("About Argenta "+root.appVersion)
+            title: i18n.tr("About Argenta Mobile "+root.appVersion)
             text: i18n.tr("This is a Belgium Argenta Bank Webapp for Ubuntu Touch.")
 
             Image {
@@ -23,6 +23,11 @@ Dialog {
             Text {
                 wrapMode: Text.WordWrap
                 text: i18n.tr('Special thanks to tester, Tomas Öqvist')
+            }
+
+            Text {
+                wrapMode: Text.WordWrap
+                text: i18n.tr('<b>The Argenta Mobile app is not affiliated with Argenta Bank Belgium.</b>')
             }
 
             Button {
