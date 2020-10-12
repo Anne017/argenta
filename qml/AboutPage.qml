@@ -17,12 +17,7 @@ Dialog {
 
             Text {
                 wrapMode: Text.WordWrap
-                text: i18n.tr('Copyright (c) 2018-2020 <br> by Rudi Timmermans  <br><br> E-Mail: <a href=\"mailto://rudi.timmer@mail.ch\">rudi.timmer@mail.ch</a>')
-            }
-
-            Text {
-                wrapMode: Text.WordWrap
-                text: i18n.tr('Special thanks to tester, Tomas Öqvist')
+                text: i18n.tr('Copyright (c) 2018-2020 <br> by Rudi Timmermans  <br><br> E-Mail: <a href=\"mailto://rudi.timmer@gmx.com\">rudi.timmer@gmx.com</a>')
             }
 
             Text {
@@ -35,7 +30,7 @@ Dialog {
 
                 color: UbuntuColors.orange
                 text: i18n.tr('Donate')
-                onClicked: Qt.openUrlExternally('https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=29THE9VFMZ4PS')
+                onClicked: Qt.openUrlExternally('https://www.paypal.com/paypalme/RudiTimmermans')
             }
 
             Button {

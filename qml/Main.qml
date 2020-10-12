@@ -3,17 +3,16 @@ import Morph.Web 0.1
 import QtWebEngine 1.7
 import Ubuntu.Components 1.3
 import Ubuntu.Components.Popups 1.3
-import Ubuntu.UnityWebApps 0.1 as UnityWebApps
-import Ubuntu.Content 1.1
-import QtMultimedia 5.8
+import Qt.labs.settings 1.0
+import QtQuick.Window 2.2
 import QtSystemInfo 5.0
-import QtQml.Models 2.1
 import "actions" as Actions
 import "."
 
 MainView {
     id: root
     objectName: "mainView"
+    ScreenSaver { screenSaverEnabled: false }
     theme.name: "Ubuntu.Components.Themes.Ambiance"
 
     focus: true
@@ -29,20 +28,40 @@ MainView {
     property bool openExternalUrlInOverlay: true
     property bool popupBlockerEnabled: true
     
-    property string appVersion : "v2.2"
+    property string appVersion : "v2.4"
 
-    Page {
+    property string myUA: "Mozilla/5.0 (iPhone; CPU OS 11_0 like Mac OS X) AppleWebKit/604.1.25 (KHTML, like Gecko) Version/11.0 Mobile/15A372 Safari/604.1"
+
+  Page {
     header: PageHeader {
         id: header
         title: i18n.tr("Argenta Mobile "+root.appVersion)
 
-        trailingActionBar.actions: [   
+        trailingActionBar.actions: [
+            Action {
+                iconName: 'go-next'
+                text: i18n.tr('Forward')
+                onTriggered: webview.goForward()
+            },
+   
+            Action {
+                iconName: 'go-previous'
+                text: i18n.tr('Back')
+                onTriggered: webview.goBack()
+            },
+
+           Action {
+                iconName: 'reload'
+                text: i18n.tr('Reload')
+                onTriggered: webview.reload()
+            },
+
             Action {
                 iconName: 'info'
                 text: i18n.tr('About')
                 onTriggered: PopupUtils.open(Qt.resolvedUrl('AboutPage.qml'))
             }
-        ]
+         ]
     }
 
 
@@ -50,14 +69,14 @@ MainView {
             id: webview
 
             WebEngineProfile {
-            id: webContext 
+            id: webContext
 
             property alias userAgent: webContext.httpUserAgent
             property alias dataPath: webContext.persistentStoragePath
 
             dataPath: dataLocation
 
-            userAgent: "Mozilla/5.0 (Linux; U; Android 4.1.1; es-; AVA-V470 Build/GRK39F) AppleWebKit/533.1 (KHTML, like Gecko) Version/4.0 Mobile Safari/533.1"
+            userAgent: myUA
 
             persistentCookiesPolicy: WebEngineProfile.ForcePersistentCookies
 

@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-02-21 12:47+0000\n"
+"POT-Creation-Date: 2020-10-12 08:37+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -46,6 +46,26 @@ msgstr ""
 msgid "No"
 msgstr ""
 
+#: ../qml/Main.qml:38
+msgid "Argenta Mobile "
+msgstr ""
+
+#: ../qml/Main.qml:43
+msgid "Forward"
+msgstr ""
+
+#: ../qml/Main.qml:49
+msgid "Back"
+msgstr ""
+
+#: ../qml/Main.qml:55 ../qml/SadPage.qml:33
+msgid "Reload"
+msgstr ""
+
+#: ../qml/Main.qml:61
+msgid "About"
+msgstr ""
+
 #: ../qml/AboutPage.qml:9
 msgid "About Argenta Mobile "
 msgstr ""
@@ -57,24 +77,44 @@ msgstr ""
 #: ../qml/AboutPage.qml:20
 msgid ""
 "Copyright (c) 2018-2020 <br> by Rudi Timmermans  <br><br> E-Mail: <a href="
-"\"mailto://rudi.timmer@mail.ch\">rudi.timmer@mail.ch</a>"
+"\"mailto://rudi.timmer@gmx.com\">rudi.timmer@gmx.com</a>"
 msgstr ""
 
 #: ../qml/AboutPage.qml:25
-msgid "Special thanks to tester, Tomas Öqvist"
-msgstr ""
-
-#: ../qml/AboutPage.qml:30
 msgid ""
 "<b>The Argenta Mobile app is not affiliated with Argenta Bank Belgium.</b>"
 msgstr ""
 
-#: ../qml/AboutPage.qml:37
+#: ../qml/AboutPage.qml:32
 msgid "Donate"
 msgstr ""
 
-#: ../qml/AboutPage.qml:45
+#: ../qml/AboutPage.qml:40
 msgid "OK"
+msgstr ""
+
+#: ../qml/actions/CopyImage.qml:22
+msgid "Copy image"
+msgstr ""
+
+#: ../qml/actions/CopyLink.qml:22
+msgid "Copy link"
+msgstr ""
+
+#: ../qml/actions/Copy.qml:22
+msgid "Copy"
+msgstr ""
+
+#: ../qml/actions/SaveImage.qml:22
+msgid "Save image"
+msgstr ""
+
+#: ../qml/actions/ShareLink.qml:22
+msgid "Share…"
+msgstr ""
+
+#: ../qml/SadPage.qml:27
+msgid "Oops, something went wrong."
 msgstr ""
 
 #: ../qml/ContentDownloadDialog.qml:63
@@ -92,40 +132,4 @@ msgstr ""
 
 #: ../qml/ContentDownloadDialog.qml:94
 msgid "Cancel"
-msgstr ""
-
-#: ../qml/SadPage.qml:27
-msgid "Oops, something went wrong."
-msgstr ""
-
-#: ../qml/SadPage.qml:33
-msgid "Reload"
-msgstr ""
-
-#: ../qml/actions/SaveImage.qml:22
-msgid "Save image"
-msgstr ""
-
-#: ../qml/actions/CopyImage.qml:22
-msgid "Copy image"
-msgstr ""
-
-#: ../qml/actions/ShareLink.qml:22
-msgid "Share…"
-msgstr ""
-
-#: ../qml/actions/Copy.qml:22
-msgid "Copy"
-msgstr ""
-
-#: ../qml/actions/CopyLink.qml:22
-msgid "Copy link"
-msgstr ""
-
-#: ../qml/Main.qml:37
-msgid "Argenta Mobile "
-msgstr ""
-
-#: ../qml/Main.qml:42
-msgid "About"
 msgstr ""

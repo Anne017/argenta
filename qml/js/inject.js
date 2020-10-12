@@ -5,6 +5,10 @@ function handler(event) {
     style.type = 'text/css';
     style.appendChild(document.createTextNode(
         '.navbar-toggle { display: none; } '+
+        '.argnt-a-language-selection{ display: none; } ' +
+        '.argnt-m-header__logo{ display: none; } ' +
+        '.argnt-m-footer__link{ display: none; } ' +
+        '.argnt-a-link{ display: none; } ' +
         '.col-sm-4 ag-footer-links{ display: none; } ' +
         '.ag-footer-links-title { display: none; } ' +
         '.bp-container bp-ui-dragRoot argenta-footer-container { display: none; } ' +
