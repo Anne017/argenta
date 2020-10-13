@@ -35,7 +35,7 @@ MainView {
   Page {
     header: PageHeader {
         id: header
-        title: i18n.tr("Argenta Mobile "+root.appVersion)
+        title: i18n.tr("Argenta Mobile")
 
         trailingActionBar.actions: [
             Action {
