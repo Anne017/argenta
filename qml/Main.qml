@@ -15,20 +15,20 @@ MainView {
     ScreenSaver { screenSaverEnabled: false }
     theme.name: "Ubuntu.Components.Themes.Ambiance"
 
-    focus: true
-
     anchors {
         fill: parent
     }
 
     applicationName: "argenta.bank"
     automaticOrientation: true
+    anchorToKeyboard: true
+    focus: true
     property bool blockOpenExternalUrls: false
     property bool runningLocalApplication: false
     property bool openExternalUrlInOverlay: true
     property bool popupBlockerEnabled: true
     
-    property string appVersion : "v2.4"
+    property string appVersion : "v2.5"
 
     property string myUA: "Mozilla/5.0 (iPhone; CPU OS 11_0 like Mac OS X) AppleWebKit/604.1.25 (KHTML, like Gecko) Version/11.0 Mobile/15A372 Safari/604.1"
 

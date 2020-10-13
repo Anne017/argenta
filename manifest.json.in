@@ -9,7 +9,7 @@
             "desktop": "argenta.desktop"
         }
     },
-    "version": "2.4",
+    "version": "2.5",
     "maintainer": "Rudi Timmermans <rudi.timmer@gmx.com>",
     "framework" : "ubuntu-sdk-16.04"
 }
