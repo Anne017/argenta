@@ -5,14 +5,13 @@ import Ubuntu.Components 1.3
 import Ubuntu.Components.Popups 1.3
 import Qt.labs.settings 1.0
 import QtQuick.Window 2.2
-import QtSystemInfo 5.0
 import "actions" as Actions
+import "components"
 import "."
 
 MainView {
     id: root
     objectName: "mainView"
-    ScreenSaver { screenSaverEnabled: false }
     theme.name: "Ubuntu.Components.Themes.Ambiance"
 
     anchors {
@@ -28,7 +27,7 @@ MainView {
     property bool openExternalUrlInOverlay: true
     property bool popupBlockerEnabled: true
     
-    property string appVersion : "v2.6"
+    property string appVersion : "v2.7"
 
     property string myUA: "Mozilla/5.0 (iPhone; CPU OS 11_0 like Mac OS X) AppleWebKit/604.1.25 (KHTML, like Gecko) Version/11.0 Mobile/15A372 Safari/604.1"
 
@@ -54,6 +53,12 @@ MainView {
                 iconName: 'reload'
                 text: i18n.tr('Reload')
                 onTriggered: webview.reload()
+            },
+
+            Action {
+                iconName: 'settings'
+                text: i18n.tr('Settings')
+                onTriggered: PopupUtils.open(Qt.resolvedUrl('SettingsPage.qml'))
             },
 
             Action {
@@ -103,7 +108,7 @@ MainView {
 
          ]
 
-                zoomFactor: 2.5
+                zoomFactor: String(webview.url).indexOf("https://homebank.argenta.be") >= 0 ? appSettings.argentaZoomFactor : appSettings.zoomFactor
                 url: "https://homebank.argenta.be"
 
             onFileDialogRequested: function(request) {
@@ -154,6 +159,10 @@ MainView {
             asynchronous: true
           }
        }
+       
+            SettingsComponent{
+                id: appSettings
+            }       
 
             Loader {
                 id: contentHandlerLoader
@@ -179,4 +188,4 @@ MainView {
                 asynchronous: true
             }
          }
-       }       
+      }

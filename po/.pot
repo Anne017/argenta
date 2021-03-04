@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-10-13 08:48+0000\n"
+"POT-Creation-Date: 2021-03-03 20:01+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -16,6 +16,74 @@ msgstr ""
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+
+#: ../qml/AboutPage.qml:9
+msgid "About Argenta Mobile "
+msgstr ""
+
+#: ../qml/AboutPage.qml:10
+msgid "This is a Belgium Argenta Bank Webapp for Ubuntu Touch."
+msgstr ""
+
+#: ../qml/AboutPage.qml:20
+msgid ""
+"Copyright (c) 2018-2021 <br> by Rudi Timmermans  <br><br> E-Mail: <a href="
+"\"mailto://rudi.timmer@gmx.com\">rudi.timmer@gmx.com</a>"
+msgstr ""
+
+#: ../qml/AboutPage.qml:25
+msgid ""
+"<b>The Argenta Mobile app is not affiliated with Argenta Bank Belgium.</b>"
+msgstr ""
+
+#: ../qml/AboutPage.qml:32
+msgid "Donate"
+msgstr ""
+
+#: ../qml/AboutPage.qml:40
+msgid "OK"
+msgstr ""
+
+#: ../qml/ContentDownloadDialog.qml:63
+msgid ""
+"Choose an application to open this file or add it to the downloads folder."
+msgstr ""
+
+#: ../qml/ContentDownloadDialog.qml:69
+msgid "Choose an application"
+msgstr ""
+
+#: ../qml/ContentDownloadDialog.qml:82
+msgid "Download"
+msgstr ""
+
+#: ../qml/ContentDownloadDialog.qml:94
+msgid "Cancel"
+msgstr ""
+
+#: ../qml/Main.qml:37
+msgid "Argenta Mobile"
+msgstr ""
+
+#: ../qml/Main.qml:42
+msgid "Forward"
+msgstr ""
+
+#: ../qml/Main.qml:48
+msgid "Back"
+msgstr ""
+
+#: ../qml/Main.qml:54 ../qml/SadPage.qml:33
+msgid "Reload"
+msgstr ""
+
+#: ../qml/Main.qml:60
+msgid "Settings"
+msgstr ""
+
+#: ../qml/Main.qml:66
+msgid "About"
+msgstr ""
 
 #: ../qml/MediaAccessDialog.qml:31
 msgid "Permission"
@@ -46,51 +114,24 @@ msgstr ""
 msgid "No"
 msgstr ""
 
-#: ../qml/Main.qml:38
-msgid "Argenta Mobile"
+#: ../qml/SadPage.qml:27
+msgid "Oops, something went wrong."
 msgstr ""
 
-#: ../qml/Main.qml:43
-msgid "Forward"
+#: ../qml/SettingsPage.qml:11
+msgid "Argenta Mobile settings"
 msgstr ""
 
-#: ../qml/Main.qml:49
-msgid "Back"
+#: ../qml/SettingsPage.qml:14
+msgid "Zoom factor"
 msgstr ""
 
-#: ../qml/Main.qml:55 ../qml/SadPage.qml:33
-msgid "Reload"
+#: ../qml/SettingsPage.qml:25
+msgid "Close"
 msgstr ""
 
-#: ../qml/Main.qml:61
-msgid "About"
-msgstr ""
-
-#: ../qml/AboutPage.qml:9
-msgid "About Argenta Mobile "
-msgstr ""
-
-#: ../qml/AboutPage.qml:10
-msgid "This is a Belgium Argenta Bank Webapp for Ubuntu Touch."
-msgstr ""
-
-#: ../qml/AboutPage.qml:20
-msgid ""
-"Copyright (c) 2018-2020 <br> by Rudi Timmermans  <br><br> E-Mail: <a href="
-"\"mailto://rudi.timmer@gmx.com\">rudi.timmer@gmx.com</a>"
-msgstr ""
-
-#: ../qml/AboutPage.qml:25
-msgid ""
-"<b>The Argenta Mobile app is not affiliated with Argenta Bank Belgium.</b>"
-msgstr ""
-
-#: ../qml/AboutPage.qml:32
-msgid "Donate"
-msgstr ""
-
-#: ../qml/AboutPage.qml:40
-msgid "OK"
+#: ../qml/actions/Copy.qml:22
+msgid "Copy"
 msgstr ""
 
 #: ../qml/actions/CopyImage.qml:22
@@ -101,35 +142,10 @@ msgstr ""
 msgid "Copy link"
 msgstr ""
 
-#: ../qml/actions/Copy.qml:22
-msgid "Copy"
-msgstr ""
-
 #: ../qml/actions/SaveImage.qml:22
 msgid "Save image"
 msgstr ""
 
 #: ../qml/actions/ShareLink.qml:22
 msgid "Share…"
-msgstr ""
-
-#: ../qml/SadPage.qml:27
-msgid "Oops, something went wrong."
-msgstr ""
-
-#: ../qml/ContentDownloadDialog.qml:63
-msgid ""
-"Choose an application to open this file or add it to the downloads folder."
-msgstr ""
-
-#: ../qml/ContentDownloadDialog.qml:69
-msgid "Choose an application"
-msgstr ""
-
-#: ../qml/ContentDownloadDialog.qml:82
-msgid "Download"
-msgstr ""
-
-#: ../qml/ContentDownloadDialog.qml:94
-msgid "Cancel"
 msgstr ""
