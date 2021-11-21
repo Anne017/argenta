@@ -1,7 +1,7 @@
 argenta_click_package:
     image: clickable/ci-16.04-armhf
     script:
-        - clickable clean build review -a all
+        - clickable chain clean build review -a all
         - cp build/all/app/*click ./
     artifacts:
         paths:
