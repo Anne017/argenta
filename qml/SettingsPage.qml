@@ -8,7 +8,7 @@ import "components/settingspage"
 Dialog {
     id: settingsDialog
 
-    title: i18n.tr("Argenta settings")
+    title: i18n.tr("Argenta Mobile settings")
 
          Component.onCompleted: {
             selector.selectedIndex = appSettings.selectedIndex
