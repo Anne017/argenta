@@ -7,6 +7,7 @@ Item{
     //Settings page
     property alias zoomFactor: settings.zoomFactor
     property alias argentaZoomFactor: settings.argentaZoomFactor
+    property alias selectedIndex: settings.selectedIndex
     
     //User data
     property alias firstRun: settings.firstRun
@@ -15,8 +16,9 @@ Item{
         id: settings
     
         //Settings page
-        property real zoomFactor: 2.50
-        property real argentaZoomFactor: 2.50
+        property real zoomFactor: 1.75
+        property real argentaZoomFactor: 1.75
+        property real selectedIndex: 1
         
         //User data
         property bool firstRun: true

@@ -17,6 +17,10 @@ MainView {
     anchors {
         fill: parent
     }
+    
+    Component.onCompleted: {
+        webview.zoomFactor = appSettings.argentaZoomFactor
+    }    
 
     applicationName: "argenta.bank"
     automaticOrientation: true
@@ -27,7 +31,7 @@ MainView {
     property bool openExternalUrlInOverlay: true
     property bool popupBlockerEnabled: true
     
-    property string appVersion : "v2.8"
+    property string appVersion : "v2.9"  
 
     property string myUA: "Mozilla/5.0 (iPhone; CPU OS 11_0 like Mac OS X) AppleWebKit/604.1.25 (KHTML, like Gecko) Version/11.0 Mobile/15A372 Safari/604.1"
 
@@ -108,7 +112,7 @@ MainView {
 
          ]
 
-                zoomFactor: String(webview.url).indexOf("https://homebank.argenta.be") >= 0 ? appSettings.argentaZoomFactor : appSettings.zoomFactor
+                zoomFactor: 2.20
                 url: "https://homebank.argenta.be"
 
             onFileDialogRequested: function(request) {

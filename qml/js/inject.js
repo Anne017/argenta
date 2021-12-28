@@ -20,6 +20,10 @@ function handler(event) {
         '.securityTipsLine { display: none; } ' +
         '.logingrey { display: none; } ' +
         '.linksMenuMobile { display: none; } ' +
+        '.argnt-a-collapse-header { display: none; } ' +
+        '.argnt-p-message-warning-detail { display: none; } ' +
+        '.argnt-m-footer { display: none; } ' +
+        '.argnt-a-separator { display: none; } ' +
         '.social-media { display: none; } ' 
     ));
 

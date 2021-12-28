@@ -2,9 +2,7 @@ project(argenta C CXX)
 cmake_minimum_required(VERSION 3.0.0)
 
 
-# Do not remove this line, its required for the correct functionality of the Ubuntu-SDK
-set(UBUNTU_MANIFEST_PATH "manifest.json.in" CACHE INTERNAL "Tells QtCreator location and name of the manifest file")
-set (CMAKE_MODULE_PATH "${CMAKE_CURRENT_SOURCE_DIR}/cmake")
+set(CMAKE_MODULE_PATH "${CMAKE_CURRENT_SOURCE_DIR}/cmake")
 
 find_package(Qt5Core)
 find_package(Qt5Qml)
@@ -22,33 +20,24 @@ execute_process(
 
 set(QT_IMPORTS_DIR "lib/${ARCH_TRIPLET}")
 
-set(APP_NAME "Argenta Mobile")
-set(APP_ID "argenta.bank")
+set(PROJECT_NAME "argenta")
 set(CMAKE_INSTALL_PREFIX /)
 set(DATA_DIR /)
 set(DESKTOP_FILE_NAME ${PROJECT_NAME}.desktop)
 
 # This command figures out the target architecture for use in the manifest file
 execute_process(
-  COMMAND dpkg-architecture -qDEB_HOST_ARCH
-  OUTPUT_VARIABLE CLICK_ARCH
-  OUTPUT_STRIP_TRAILING_WHITESPACE
+    COMMAND dpkg-architecture -qDEB_HOST_ARCH
+    OUTPUT_VARIABLE CLICK_ARCH
+    OUTPUT_STRIP_TRAILING_WHITESPACE
 )
 
 configure_file(manifest.json.in ${CMAKE_CURRENT_BINARY_DIR}/manifest.json)
-install(FILES ${CMAKE_CURRENT_BINARY_DIR}/manifest.json
-        DESTINATION ${CMAKE_INSTALL_PREFIX})
-
-# This command figures out the target architecture for use in the manifest file
-execute_process(
-  COMMAND dpkg-architecture -qDEB_HOST_ARCH
-  OUTPUT_VARIABLE CLICK_ARCH
-  OUTPUT_STRIP_TRAILING_WHITESPACE
-)
-
+install(FILES ${CMAKE_CURRENT_BINARY_DIR}/manifest.json DESTINATION ${CMAKE_INSTALL_PREFIX})
 install(FILES ${PROJECT_NAME}.apparmor DESTINATION ${DATA_DIR})
 install(DIRECTORY qml DESTINATION ${DATA_DIR})
-install(DIRECTORY img DESTINATION ${DATA_DIR})
+install(DIRECTORY assets DESTINATION ${DATA_DIR})
+install(FILES "content-hub.json" DESTINATION ${CMAKE_INSTALL_PREFIX})
 
 # Translations
 file(GLOB_RECURSE I18N_SRC_FILES RELATIVE ${CMAKE_CURRENT_SOURCE_DIR}/po qml/*.qml qml/*.js)
@@ -72,7 +61,3 @@ add_custom_target(${DESKTOP_FILE_NAME} ALL
 install(FILES ${CMAKE_CURRENT_BINARY_DIR}/${DESKTOP_FILE_NAME} DESTINATION ${DATA_DIR})
 
 add_subdirectory(po)
-
-# No op custom target for all not compiled files, so they show up in the QtCreator project tree
-add_custom_target("Argenta_ClickFiles" ALL SOURCES "argenta.apparmor" "manifest.json.in")
-

@@ -4,7 +4,7 @@ import QtQuick.Layouts 1.3
 
 ColumnLayout{
     id: spinRange
-    
+        
     property alias title: title.text
     property real value: 1
     property alias validator: spinBox.validator
@@ -23,6 +23,8 @@ ColumnLayout{
     
     SpinBox {
         id: spinBox
+
+        font.pixelSize: 45
         
         property int decimals: 2
         property real realValue: value / spinRange.valueRatio

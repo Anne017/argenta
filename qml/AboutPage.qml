@@ -1,4 +1,4 @@
-import QtQuick 2.4
+import QtQuick 2.9
 import Ubuntu.Components 1.3
 import Ubuntu.Components.Popups 1.3
 import QtQuick.Layouts 1.1
@@ -11,13 +11,13 @@ Dialog {
 
             Image {
                 anchors.horizontalCenter: parent     
-                source: '../img/icon.png'
+                source: '../assets/icon.png'
                 fillMode: Image.PreserveAspectFit 
             }
 
             Text {
                 wrapMode: Text.WordWrap
-                text: i18n.tr('Copyright (c) 2018-2021 <br> by Rudi Timmermans  <br><br> E-Mail: <a href=\"mailto://rudi.timmer@gmx.com\">rudi.timmer@gmx.com</a>')
+                text: i18n.tr('Copyright (c) 2018-2022 <br> by Rudi Timmermans  <br><br> E-Mail: <a href=\"mailto://rudi.timmer@gmx.com\">rudi.timmer@gmx.com</a>')
             }
 
             Text {

@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-11-21 18:30+0000\n"
+"POT-Creation-Date: 2021-12-28 06:33+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -18,7 +18,7 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 
 #: ../qml/AboutPage.qml:9
-msgid "About Argenta Mobile "
+msgid "About Argenta Mobile v"
 msgstr ""
 
 #: ../qml/AboutPage.qml:10
@@ -27,7 +27,7 @@ msgstr ""
 
 #: ../qml/AboutPage.qml:20
 msgid ""
-"Copyright (c) 2018-2021 <br> by Rudi Timmermans  <br><br> E-Mail: <a href="
+"Copyright (c) 2018-2022 <br> by Rudi Timmermans  <br><br> E-Mail: <a href="
 "\"mailto://rudi.timmer@gmx.com\">rudi.timmer@gmx.com</a>"
 msgstr ""
 
@@ -44,27 +44,27 @@ msgstr ""
 msgid "OK"
 msgstr ""
 
-#: ../qml/Main.qml:37
+#: ../qml/Main.qml:41
 msgid "Argenta Mobile"
 msgstr ""
 
-#: ../qml/Main.qml:42
+#: ../qml/Main.qml:46
 msgid "Forward"
 msgstr ""
 
-#: ../qml/Main.qml:48
+#: ../qml/Main.qml:52
 msgid "Back"
 msgstr ""
 
-#: ../qml/Main.qml:54 ../qml/SadPage.qml:33
+#: ../qml/Main.qml:58 ../qml/SadPage.qml:33
 msgid "Reload"
 msgstr ""
 
-#: ../qml/Main.qml:60
+#: ../qml/Main.qml:64
 msgid "Settings"
 msgstr ""
 
-#: ../qml/Main.qml:66
+#: ../qml/Main.qml:70
 msgid "About"
 msgstr ""
 
@@ -115,14 +115,22 @@ msgid "Cancel"
 msgstr ""
 
 #: ../qml/SettingsPage.qml:11
-msgid "Argenta Mobile settings"
+msgid "Argenta settings"
 msgstr ""
 
-#: ../qml/SettingsPage.qml:14
-msgid "Zoom factor"
+#: ../qml/SettingsPage.qml:22
+msgid "Small"
 msgstr ""
 
-#: ../qml/SettingsPage.qml:25
+#: ../qml/SettingsPage.qml:22
+msgid "Normal"
+msgstr ""
+
+#: ../qml/SettingsPage.qml:22
+msgid "Large"
+msgstr ""
+
+#: ../qml/SettingsPage.qml:52
 msgid "Close"
 msgstr ""
 
